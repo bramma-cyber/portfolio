@@ -1,0 +1,92 @@
+/* GENERAL PAGE STYLE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+/* MENU STYLE */
+.navbar {
+    background-color: #123456;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #2196f3;
+    border-radius: 5px;
+}
+
+/* MOVING NAME */
+marquee h1 {
+    font-size: 48px;
+    color: darkblue;
+}
+
+/* PROFILE PHOTO */
+.profile {
+    text-align: left;
+    margin: 20px;
+}
+
+.profile img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid green;
+    border-radius: 8px;
+}
+
+/* HORIZONTAL LINE */
+hr {
+    border: 1px solid green;
+    margin: 20px;
+}
+
+/* MAIN CONTENT */
+.content {
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.content h2 {
+    color: darkblue;
+}
+
+/* FOOTER */
+footer {
+    background-color: #123456;
+    color: green;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+/* SMALL SCREEN SUPPORT */
+@media (max-width: 600px) {
+    .navbar a {
+        display: block;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 170px;
+    }
+}
+/* FOOTER */
+footer {
+    background: #102a43;
+    color: green;
+    text-align: center;
+    padding: 15px;
+}

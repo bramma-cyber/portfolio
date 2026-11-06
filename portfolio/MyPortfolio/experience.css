@@ -1,0 +1,173 @@
+
+/* GENERAL PAGE STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* TOP NAVIGATION MENU */
+nav {
+    background-color: #102a43;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c6ff;
+}
+
+/* MOVING NAME */
+.moving-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #176b87;
+    white-space: nowrap;
+    animation: moveName 10s linear infinite;
+}
+
+@keyframes moveName {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* PAGE HEADING */
+h1 {
+    text-align: center;
+    color: #102a43;
+    margin: 30px 0;
+}
+
+h2 {
+    color: #176b87;
+    margin-bottom: 15px;
+}
+
+/* MAIN CONTENT */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 15px;
+}
+
+/* CV TABLE */
+table {
+    width: 100%;
+    border: 1px solid green;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+}
+
+/* TABLE HEADINGS */
+th {
+    background-color: lightblue;
+    color: #102a43;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* TABLE DATA */
+td {
+    padding: 15px;
+    color: #333;
+}
+
+/* TABLE BORDERS */
+th, td {
+    border: 1px solid green;
+    text-align: left;
+}
+
+/* TABLE HOVER EFFECT */
+tr:hover {
+    background-color: #eaf6ff;
+}
+
+/* BOTTOM MENU */
+.bottom-menu {
+    background-color: #102a43;
+    padding: 20px;
+    text-align: center;
+}
+
+.bottom-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.bottom-menu a:hover {
+    color: #00c6ff;
+}
+
+/* FOOTER */
+footer {
+    background-color: #102a43;
+    color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    nav a,
+    .bottom-menu a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .moving-name {
+        font-size: 35px;
+    }
+}
+/* FOOTER */
+footer {
+    background: #102a43;
+    color: green;
+    text-align: center;
+    padding: 15px;
+}
